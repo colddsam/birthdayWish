@@ -17,6 +17,7 @@ const Gift = () => {
                     <Items purchase={purchase} setPurchase={setPurchase} handleOperation={handleOperation} /> :
                 <button className="bt" onClick={handleOperation}>
                     <img src={gift} alt="gift" className="giftbox"/>
+                    <div>Click Here</div>
                 </button>
                     
             }

@@ -1,0 +1,59 @@
+.Gift {
+  flex-wrap: wrap;
+  height: 170px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.Gift button {
+  height: auto;
+  width: auto;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Gift .bt {
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  width: 125px;
+  height: 150px;
+}
+.Gift .bt .giftbox {
+  width: 125px;
+  height: 125px;
+}
+@media screen and (max-width: 720px) {
+  .Gift .bt .giftbox {
+    height: 80px;
+    width: 80px;
+  }
+}
+.Gift .bt .giftbox:hover {
+  width: 150px;
+  height: 150px;
+}
+@media screen and (max-width: 720px) {
+  .Gift .bt .giftbox:hover {
+    height: 90px;
+    width: 90px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .Gift {
+    height: 110px;
+    width: 75%;
+  }
+}/*# sourceMappingURL=Gift.css.map */

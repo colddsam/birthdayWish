@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.App{
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    .party{
+        height: 175px;
+        width: auto;
+        @media screen and (max-width:720px) {
+            height: 100px;
+        }
+    }
+    .wish__section{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: border-box;
+        .ballons{
+            height: auto;
+            width: 15%;
+            box-sizing: border-box;
+
+        }
+        .wish{
+            width: 60%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 2px solid #36e0fa;
+            border-radius: 15px;
+            font-size: 14px;
+            @media screen and (max-width:720px) {
+                margin-top: 20px;
+                font-size: 11px;
+            }
+        }
+    }
+}

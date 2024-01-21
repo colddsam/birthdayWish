@@ -1,13 +1,13 @@
 import React from "react";
 import {choclate, snack, momo, coffee, book } from "../assets/assets";
-import { APICall } from "../utils/api";
+import {SendMail } from "../utils/api";
 
-const Items = ({ handleOperation,purchase,setPurchase }) => {
+const Items = ({ handleOperation,purchase,setPurchase,sender }) => {
     
     const handelPurchase = async (gift) => {
         handleOperation();
         if (!purchase) {
-            await APICall(gift);
+            await SendMail(gift,sender);
             alert("Gift t jana nilam abar dakha kor dia dabo vaiiiiiiii..........");
             setPurchase(true);
         }
